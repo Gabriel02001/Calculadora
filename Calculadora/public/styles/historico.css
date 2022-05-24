@@ -1,0 +1,58 @@
+body{
+    background: #D9D9D9;
+    overflow: hidden;
+}
+
+.content{
+    width: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+.list_operations{
+    list-style: none;
+    padding: 5px;
+    height: 800px;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.list_operations h1{
+
+text-align: center;
+margin: 10px 0px;
+
+}
+
+.list_operations .operation {
+    width: 100%;
+}
+
+
+.list_operations .operation .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+  }
+
+.card .card-body {
+    padding: 2px 16px;
+  }  
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+#time{
+    text-align: right;
+}
+
+#operation_id{
+    position: absolute;
+    bottom: 0;
+
+    padding: 5px;
+}
+  ::-webkit-scrollbar {
+    display: none;
+    }

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding:0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+  
+  font-size: 62.5%;   
+}
+
+a{
+  position: absolute;
+  top: 42px;
+  right: 220px;
+  padding: 10px 52px;
+  background: #58d05a;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+  font-weight: bolder;
+
+}
+a:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
+a:link{
+  color: white;
+}

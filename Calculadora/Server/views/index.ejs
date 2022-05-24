@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+
+
+  <!-- VIEWPORT -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GOOGLE STYLESHEET || FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Mitr:wght@600&family=Pacifico&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- MY STYLESHEETS || CSS -->
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/index.css">
+
+	</head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center" style="position: relative;">
+          <br />
+          
+          <form action="/" method="POST" class="calculadora">
+
+            
+            <div class="campo">
+            
+            <input type="text" class="hora" placeholder="" disabled="disabled" >
+            <input type="text" class="data" placeholder="" disabled="disabled" >
+            <input type="text"  name="values" class="form-control resultado" placeholder=""  value="<%= result %>" readonly >
+            </div>
+           
+
+            <div class="row">
+              <button type="button" class="btn btn-apagar btn-dark btn-lg clear font-weight-light" data-clear-all>AC</button>
+              <button type="button" class="btn btn-ponto btn-dark btn-lg clear font-weight-light" data-delete>C</button>
+              <button type="button" class="btn btn-divide btn-dark btn-lg font-weight-light"data-operation>/</button>
+              <button type="button" class="btn btn-vezes btn-dark btn-lg font-weight-light" data-operation>*</button>
+            </div>
+
+            <div class="row"> 
+              <button type="button" class="btn btn-7 btn-dark btn-lg font-weight-light" data-number>7</button>
+              <button type="button" class="btn btn-8 btn-dark btn-lg font-weight-light" data-number>8</button>
+              <button type="button" class="btn btn-9 btn-dark btn-lg font-weight-light" data-number>9</button>
+              <button type="button" class="btn btn-menos btn-dark btn-lg font-weight-light" data-operation>-</button>
+            </div>
+            
+            <div class="row">
+              <button type="button" class="btn btn-4 btn-dark btn-lg font-weight-light" data-number>4</button>
+              <button type="button" class="btn btn-5 btn-dark btn-lg font-weight-light" data-number>5</button>
+              <button type="button" class="btn btn-6 btn-dark btn-lg font-weight-light" data-number>6</button>
+              <button type="button" class="btn btn-somar btn-dark btn-lg font-weight-light" data-operation>+</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn-1 btn-dark btn-lg font-weight-light" data-number>1</button>
+              <button type="button" class="btn btn-2 btn-dark btn-lg font-weight-light" data-number>2</button>
+              <button type="button" class="btn btn-3 btn-dark btn-lg font-weight-light" data-number>3</button>
+             
+              <button type="submit" class="btn btn-igual btn-dark btn-lg enter" data-equals>=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+                <button type="button" class="btn btn-parenteses btn-dark zero btn-lg font-weight-light" data-number> ( </button>
+              <button type="button" class="btn btn-0 btn-dark zero btn-lg font-weight-light" data-number>0</button>
+              <button type="button" class="btn btn-parentenses btn-dark btn-lg font-weight-light" data-number> ) </button>
+            </div>
+
+          </form>
+         <a  href="/historico">Historico</a>
+        </div>
+      </div>
+    </div>   
+    
+  </body>	
+
+  
+  <script src="/scripts/main.js"></script> 
+  
+</html>
