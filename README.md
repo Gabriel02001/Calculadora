@@ -4,8 +4,13 @@ Projeto desenvolvido para criação de uma calculadora com as quatro operações
 INSTALL
 
 npm i dotenv
+
 npm i ejs
+
 npm i express
+
 npm i mariadb
+
 npm i mathjs
+
 
